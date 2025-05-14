@@ -1,0 +1,22 @@
+/* Any additional custom styles that can't be achieved with Tailwind */
+.nav-link {
+  color: var(--color-neutral-700);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-primary-600);
+  background-color: var(--color-primary-50);
+}
+
+.nav-link.active {
+  color: var(--color-primary-600);
+  border-bottom: 2px solid var(--color-primary-500);
+}
+
+.logo-text {
+  background: linear-gradient(135deg, var(--color-primary-600), var(--color-accent-600));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

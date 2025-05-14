@@ -1,0 +1,44 @@
+/* Any additional custom styles that can't be achieved with Tailwind */
+.footer {
+  background-color: var(--color-neutral-900);
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  color: var(--color-neutral-400);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.heart {
+  color: var(--color-accent-500);
+  display: inline-block;
+  animation: heartbeat 1.5s infinite;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

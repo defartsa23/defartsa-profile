@@ -1,0 +1,178 @@
+/* Any additional custom styles that can't be achieved with Tailwind */
+.projects-section {
+  background-color: white;
+  padding: 5rem 0;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-neutral-900);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, var(--color-primary-500), var(--color-accent-500));
+  border-radius: 9999px;
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-neutral-800);
+}
+
+.project-card {
+  background-color: var(--color-neutral-50);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid transparent;
+}
+
+.professional-project {
+  border-left-color: var(--color-primary-500);
+}
+
+.personal-project {
+  border-left-color: var(--color-accent-500);
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.project-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-neutral-800);
+}
+
+.project-type {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-800);
+}
+
+.project-position {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--color-accent-100);
+  color: var(--color-accent-800);
+}
+
+.project-description {
+  color: var(--color-neutral-600);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--color-neutral-200);
+  color: var(--color-neutral-700);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary-600);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--color-primary-700);
+}
+
+.project-link-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.25rem;
+}
+
+.work-project-card {
+  background-color: var(--color-neutral-50);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--color-accent-500);
+}
+
+.work-project-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.work-project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-neutral-800);
+  margin-bottom: 0.75rem;
+}
+
+.work-project-description {
+  color: var(--color-neutral-600);
+  margin-bottom: 1rem;
+}
+
+.work-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.work-project-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--color-accent-100);
+  color: var(--color-accent-800);
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Programming Languages",
+    "skills": [
+      { "name": "Node.js", "level": "Intermediate" },
+      { "name": "Python", "level": "Intermediate" },
+      { "name": "PHP", "level": "Intermediate" },
+      { "name": "Java", "level": "Intermediate" },
+      { "name": "Go", "level": "Beginner" }
+    ]
+  },
+  {
+    "name": "Frameworks",
+    "skills": [
+      { "name": "NestJS", "level": "Intermediate" },
+      { "name": "ExpressJS", "level": "Intermediate" },
+      { "name": "FastAPI", "level": "Intermediate" }
+    ]
+  },
+  {
+    "name": "Databases",
+    "skills": [
+      { "name": "MariaDB", "level": "Intermediate" },
+      { "name": "MySQL", "level": "Intermediate" },
+      { "name": "PostgreSQL", "level": "Intermediate" },
+      { "name": "MongoDB", "level": "Intermediate" },
+      { "name": "Redis", "level": "Intermediate" }
+    ]
+  },
+  {
+    "name": "Tools & Technologies",
+    "skills": [
+      { "name": "Docker", "level": "Intermediate" },
+      { "name": "Git", "level": "Intermediate" },
+      { "name": "RESTful API Design", "level": "Intermediate" },
+      { "name": "Microservices Architecture", "level": "Intermediate" },
+      { "name": "Web Scraping", "level": "Beginner" }
+    ]
+  }
+]

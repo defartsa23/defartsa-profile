@@ -1,0 +1,67 @@
+<section id="medium-articles" class="medium-articles-section">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="section-title">Latest Articles</h2>
+
+      <!-- Loading state -->
+      @if (isLoading) {
+        <div class="loading-container">
+          <div class="loading-spinner"></div>
+          <p>Loading articles...</p>
+        </div>
+      }
+
+      <!-- Error state -->
+      @if (hasError) {
+        <div class="error-container">
+          <p>Unable to load articles from Medium. Please check back later.</p>
+        </div>
+      }
+
+      <!-- Articles grid -->
+      @if (!isLoading && !hasError && articles.length > 0) {
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          @for (article of articles; track article.link) {
+            <div class="article-card">
+              @if (article.image) {
+                <div class="article-image-container">
+                  <img [src]="article.image" [alt]="article.title" class="article-image">
+                </div>
+              }
+              <div class="article-content">
+                <h3 class="article-title">{{ article.title }}</h3>
+                <p class="article-date">{{ article.pubDate }}</p>
+                <p class="article-description">{{ article.description }}</p>
+                <a [href]="article.link" target="_blank" class="article-link">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="article-link-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          }
+        </div>
+      }
+
+      <!-- No articles state -->
+      @if (!isLoading && !hasError && articles.length === 0) {
+        <div class="no-articles-container">
+          <p>No articles found. Check out my <a [href]="'https://medium.com/@' + mediumUsername" target="_blank" class="medium-link">Medium profile</a> for more content.</p>
+        </div>
+      }
+
+      <!-- Medium profile link -->
+      @if (!isLoading && !hasError && articles.length > 0) {
+        <div class="view-all-container">
+          <a [href]="'https://medium.com/@' + mediumUsername" target="_blank" class="view-all-link">
+            View all articles on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" class="view-all-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+[
+  { "label": "Home", "path": "#hero" },
+  { "label": "About", "path": "#about" },
+  { "label": "Skills", "path": "#skills" },
+  { "label": "Projects", "path": "#projects" },
+  { "label": "Articles", "path": "#medium-articles" }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Rand Pass Generator",
+    "description": "A password generator with multiple formats and strength scoring.",
+    "link": "https://pypi.org/project/rand-pass-generator/",
+    "type": "Personal",
+    "category": "PyPI Package",
+    "position": "Developer",
+    "technologies": ["Python", "Cryptography", "Package"]
+  },
+  {
+    "name": "Python Library Quick Start",
+    "description": "A minimal template for publishing Python packages.",
+    "link": "https://github.com/defartsa23/python-library-quick-start",
+    "type": "Personal",
+    "category": "GitHub Repository",
+    "position": "Developer",
+    "technologies": ["Python", "Packaging", "Template"]
+  },
+  {
+    "name": "Jakarta Menyala",
+    "description": "Community fee payment system with real-time transactions, multi-role access, and financial reports.",
+    "type": "Professional",
+    "position": "Team Lead",
+    "technologies": ["Node.js", "NestJS", "PostgreSQL", "Redis"]
+  },
+  {
+    "name": "VIP Parkir",
+    "description": "Digital parking management system with integrated payments and intuitive frontend features.",
+    "type": "Professional",
+    "position": "Team Lead",
+    "technologies": ["Node.js", "NestJS", "MariaDB"]
+  },
+  {
+    "name": "VIP Tiket",
+    "description": "Modular backend architecture and API-driven event ticketing platform.",
+    "type": "Professional",
+    "position": "Team Lead",
+    "technologies": ["Node.js", "NestJS", "Microservices", "API Design"]
+  },
+  {
+    "name": "VIP Voucher",
+    "description": "Microservices architecture redesign to improve system scalability and maintainability.",
+    "type": "Professional",
+    "position": "Team Lead",
+    "technologies": ["NestJS", "Go", "Microservices", "Docker", "API Gateway"]
+  },
+  {
+    "name": "POSKU Dashboard",
+    "description": "Merchant registration platform for PKN events with admin verification tools.",
+    "type": "Professional",
+    "position": "Team Lead",
+    "technologies": ["Node.js", "ExpressJS", "MariaDB"]
+  },
+  {
+    "name": "Internal CMS",
+    "description": "Content management system for non-technical teams (news, livestreams, banners, SEO).",
+    "type": "Professional",
+    "position": "Backend Developer",
+    "technologies": ["Node.js", "ExpressJS", "MySQL"]
+  },
+  {
+    "name": "Football Score Scraper",
+    "description": "Automated web scraper for real-time football match updates.",
+    "type": "Professional",
+    "position": "Backend Developer",
+    "technologies": ["Python", "BeautifulSoup", "Automation"]
+  },
+  {
+    "name": "Name Similarity Service",
+    "description": "Built using Levenshtein Distance for accurate data validation.",
+    "type": "Professional",
+    "position": "Developer",
+    "technologies": ["Python", "Algorithm", "API"]
+  }
+]

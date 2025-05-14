@@ -1,0 +1,67 @@
+<section id="skills" class="skills-section">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        @for (category of skillCategories; track category.name) {
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              {{ category.name }}
+            </h3>
+
+            <div class="space-y-4">
+              @for (skill of category.skills; track skill.name) {
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-level">{{ skill.level }}</span>
+                  </div>
+
+                  <div class="skill-bar">
+
+                    @if (skill.level === 'Expert') {
+                      <div class="skill-progress expert"></div>
+                    } @else if (skill.level === 'Advanced') {
+                      <div class="skill-progress advanced"></div>
+                    } @else if (skill.level === 'Intermediate') {
+                      <div class="skill-progress intermediate"></div>
+                    } @else if (skill.level === 'Beginner') {
+                      <div class="skill-progress beginner"></div>
+                    } @else {
+                      <div class="skill-progress basic"></div>
+                    }
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Additional skills visualization -->
+      <div class="skills-overview">
+        <h3 class="skills-overview-title">Skills Overview</h3>
+
+        <div class="flex flex-wrap justify-center">
+          @for (category of skillCategories; track category.name) {
+            @for (skill of category.skills; track skill.name) {
+              <div
+                class="skill-tag"
+                [ngClass]="{
+                  'expert': skill.level === 'Expert',
+                  'advanced': skill.level === 'Advanced',
+                  'intermediate': skill.level === 'Intermediate',
+                  'beginner': skill.level === 'Beginner',
+                  'basic': skill.level === 'Basic',
+                }"
+              >
+                {{ skill.name }}
+              </div>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

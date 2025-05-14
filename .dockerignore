@@ -1,0 +1,27 @@
+# Node.js dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist
+tmp
+out-tsc
+
+# Git
+.git
+.gitignore
+
+# IDE files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Testing
+coverage
+*.spec.ts
+
+# System files
+.DS_Store
+Thumbs.db

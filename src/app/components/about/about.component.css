@@ -1,0 +1,115 @@
+/* Any additional custom styles that can't be achieved with Tailwind */
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-neutral-900);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, var(--color-primary-500), var(--color-accent-500));
+  border-radius: 9999px;
+}
+
+.card {
+  background-color: var(--color-neutral-50);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.card-icon-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.card-icon-container.primary {
+  background-color: var(--color-primary-100);
+}
+
+.card-icon-container.accent {
+  background-color: var(--color-accent-100);
+}
+
+.card-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card-icon.primary {
+  color: var(--color-primary-600);
+}
+
+.card-icon.accent {
+  color: var(--color-accent-600);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-neutral-800);
+  margin-bottom: 1.5rem;
+}
+
+.card-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-neutral-800);
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: var(--color-neutral-600);
+  margin-bottom: 0.5rem;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--color-neutral-500);
+}
+
+.project-card {
+  background-color: var(--color-neutral-50);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--color-primary-500);
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.project-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-neutral-800);
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: var(--color-neutral-600);
+}
