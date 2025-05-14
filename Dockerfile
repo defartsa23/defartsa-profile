@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:alpine-slim
 
 # Copy the build output to replace the default nginx contents
-COPY --from=build /app/dist/defartsa /usr/share/nginx/html
+COPY --from=build /app/dist/defartsa/browser /usr/share/nginx/html
 
 # Copy content data
 COPY --from=build /app/public/assets/data /usr/share/nginx/html/assets/data
